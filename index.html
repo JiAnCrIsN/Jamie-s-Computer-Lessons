@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="portfolio-container">
+        <nav class="navbar">
+            <button class="nav-btn active" onclick="switchTab('home')">Home</button>
+            <button class="nav-btn" onclick="switchTab('members')">Members</button>
+            <button class="nav-btn" onclick="switchTab('q3')">3rd Quarter</button>
+            <button class="nav-btn" onclick="switchTab('q4')">4th Quarter</button>
+        </nav>
+
+        <main class="canvas-viewer">
+
+            <section id="home-slide" class="slide active-slide home-theme">
+                <div class="decorative-circle circle-purple-bottom"></div>
+                <div class="decorative-circle circle-yellow-top"></div>
+                <h1 class="main-title">COMPUTER<br>PORTFOLIO</h1>
+            </section>
+
+            <section id="members-slide" class="slide members-theme">
+                <div class="decorative-ring ring-purple-bottom"></div>
+                <div class="decorative-ring ring-yellow-top"></div>
+                <h2 class="section-title">MEMBERS</h2>
+                
+                <div class="members-grid">
+                    <div class="member-card">
+                        <div class="photo-placeholder">
+                            <img src="Justiniane.png" alt="Justiniane" class="member-photo">
+                        </div>
+                        <p class="member-name">Justiniane</p>
+                    </div>
+                    
+                    <div class="member-card">
+                        <div class="photo-placeholder">
+                            <img src="Cabrera.png" alt="Cabrera" class="member-photo">
+                        </div>
+                        <p class="member-name">Cabrera</p>
+                    </div>
+                    
+                    <div class="member-card">
+                        <div class="photo-placeholder">
+                            <img src="Ricafrente.png" alt="Ricafrente" class="member-photo">
+                        </div>
+                        <p class="member-name">Ricafrente</p>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="photo-placeholder">
+                            <img src="DelaCruz.png" alt="DelaCruz" class="member-photo">
+                        </div>
+                        <p class="member-name">Dela Cruz</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="q3-slide" class="slide white-theme">
+                <div class="decorative-ring ring-purple-bottom"></div>
+                <div class="decorative-ring ring-yellow-top"></div>
+                <h2 class="section-title">3RD QUARTER</h2>
+                
+                <div class="carousel-container">
+                    <div class="sub-slide q3-sub active-sub" id="q3-slide-1">
+                        <div class="topic-box pink-box">
+                            <p class="topic">JavaScript</p>
+
+                            <div class="topics-content">
+                                <p class="lesson-intro">
+                                    <strong>JavaScript</strong> is a fundamental web technology that plays a crucial role in making websites interactive, dynamic, and functional. It works together with <strong>HTML</strong> (which provides the structure) and <strong>CSS</strong> (which is responsible for design), forming the three core pillars of web development.
+                                </p>
+                                
+                                <div class="lesson-section">
+                                    <h4>1. Core Logic & Data Handling</h4>
+                                    <p>Through the use of variables, operators, statements, and data types, JavaScript is able to store, process, and manipulate data efficiently.</p>
+                                </div>
+                        
+                                <div class="lesson-section">
+                                    <h4>2. Control Flow & Interactivity</h4>
+                                    <p>Control flow structures, such as conditional statements and loops, allow programs to make decisions, repeat actions, and respond seamlessly to user inputs like clicks, typing, and hovering.</p>
+                                </div>
+                        
+                                <div class="lesson-section">
+                                    <h4>3. Separation of Concerns</h4>
+                                    <p>The concept of separation of concerns emphasizes the importance of organizing code into separate files for HTML, CSS, and JavaScript. This best practice drastically improves code readability, maintainability, and scalability as websites grow more complex.</p>
+                                </div>
+                        
+                                <div class="lesson-section">
+                                    <h4>4. Execution & Implementation</h4>
+                                    <p>By utilizing internal or external scripts, along with proper coding structures, developers can build responsive, user-friendly, and highly engaging web pages that perform everything from simple content updates to advanced interactive applications.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+            </section>
+            
+            <section id="q4-slide" class="slide pink-theme">
+                <div class="decorative-ring ring-purple-bottom"></div>
+                <div class="decorative-ring ring-yellow-top"></div>
+                <h2 class="section-title">4TH QUARTER</h2>
+            
+                <div class="carousel-container">
+                    <div class="sub-slide q4-sub active-sub" id="q4-slide-1">
+                        <div class="topic-box purple-box">
+                            <p class="topic">JavaScript Functions</p>
+                            
+                            <div class="topics-content">
+                                <p class="lesson-intro">
+                                    <strong>JavaScript functions</strong> are essential for organizing code into reusable and manageable parts. They allow developers to group related instructions into a single block that can be executed multiple times throughout a program, drastically improving structure and efficiency.
+                                </p>
+                                
+                                <div class="lesson-section">
+                                    <h4>1. Code Reusability & Simplification</h4>
+                                    <p>By declaring and calling functions, programmers can simplify complex tasks, completely avoid repetitive blocks of code, and make their projects significantly easier to test and maintain over time.</p>
+                                </div>
+
+                                <div class="lesson-section">
+                                    <h4>2. Parameters & Arguments</h4>
+                                    <p>Functions become highly flexible through the use of parameters and arguments. This capability allows a single function to accept different data inputs dynamically and compute unique, flexible results based on what was passed into it.</p>
+                                </div>
+
+                                <div class="lesson-section">
+                                    <h4>3. The Return Statement</h4>
+                                    <p>The <code>return</code> statement enables functions to send computed values directly back to the exact place where they were originally called. This makes them incredibly powerful for executing calculations and logic operations.</p>
+                                </div>
+
+                                <div class="lesson-section">
+                                    <h4>4. Modular Programming</h4>
+                                    <p>Overall, functions are the building blocks of clean, modular programming. They help developers break down large, overwhelming problems into smaller, logical, and digestible pieces that are much easier to manage.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        function switchTab(tabId) {
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.slide').forEach(slide => slide.classList.remove('active-slide'));
+            
+            if(tabId === 'home') {
+                document.getElementById('home-slide').classList.add('active-slide');
+                document.querySelectorAll('.nav-btn')[0].classList.add('active');
+            } else if(tabId === 'members') {
+                document.getElementById('members-slide').classList.add('active-slide');
+                document.querySelectorAll('.nav-btn')[1].classList.add('active');
+            } else if(tabId === 'q3') {
+                document.getElementById('q3-slide').classList.add('active-slide');
+                document.querySelectorAll('.nav-btn')[2].classList.add('active');
+            } else if(tabId === 'q4') {
+                document.getElementById('q4-slide').classList.add('active-slide');
+                document.querySelectorAll('.nav-btn')[3].classList.add('active');
+            }
+        }
+
+        function toggleQuarterSlide(quarter) {
+            const subSlides = document.querySelectorAll(`.${quarter}-sub`);
+            const arrowButton = document.getElementById(`${quarter}-arrow`);
+            
+            let currentActiveIndex = 0;
+            subSlides.forEach((slide, index) => {
+                if (slide.classList.contains('active-sub')) {
+                    currentActiveIndex = index;
+                }
+            });
+
+            subSlides[currentActiveIndex].classList.remove('active-sub');
+
+            if (currentActiveIndex === 0) {
+                subSlides[1].classList.add('active-sub');
+                arrowButton.classList.remove('next-arrow');
+                arrowButton.classList.add('prev-arrow');
+            } else {
+                subSlides[0].classList.add('active-sub');
+                arrowButton.classList.remove('prev-arrow');
+                arrowButton.classList.add('next-arrow');
+            }
+        }
+        
+    </script>
+
+</body>
+
+</html>
